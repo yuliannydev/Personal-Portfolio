@@ -7,12 +7,14 @@
   --text-sm: 1.8rem;
   --text-md: 2rem;
   --text-lg: 2.4rem;
+  --text-x-lg: 3rem;
   --black: #000;
   --background-green: #49b3b3;
   --backgroun-green-light: #1cc;
 }
 html {
   font-size: 62.5%;
+scroll-behavior: smooth;
 }
 
 body {
@@ -35,6 +37,9 @@ ul {
 }
 ul li {
   list-style: none;
+}
+ul li a:hover {
+  color: white; 
 }
 .menu {
   display: flex;
@@ -61,6 +66,20 @@ main {
   padding: 18rem 0 0;
 }
 
+/**
+.welcome h2 {
+  overflow: hidden;
+  border-right:65em solid white;
+white-space: nowrap;
+      animation: 
+      typing 1s steps(15, end) forwards;
+  width: 0;
+}
+    @keyframes typing {
+      from { width: 50% }
+      to { width: 100% }
+    }
+**/
 .portfolio ul {
   padding: 0;
 }
@@ -133,12 +152,43 @@ footer {
   line-height: 2.5rem;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 920px) {
   .menu {
     justify-content: end;
   }
+  .portfolio h2 {
+    text-align: center;
+    font-size: var(--text-x-lg);
+  }
+.welcome {
+  padding: 22rem;
+}
   .welcome h1,
   .welcome h2 {
+    text-align: left;
+    font-size: 3.8rem;
+    line-height: 4.5rem;
+  }
+.boxes {
+  display: grid;  
+  grid-template-columns: repeat(auto-fill, 36rem);
+  gap: 6rem;
+  place-content: center;
+}
+  .contact {
+    padding-top: 6rem
+  }
+  .contact h2 {
+    font-size: var(--text-x-lg);
+  }
+  .contact h2, .contact p {
     text-align: center;
+  }
+  .contact-me {
+   display: flex; 
+   justify-content: center;
+}
+  .contact-me li a:hover {
+    color: var(--brackground-green);
   }
 }
