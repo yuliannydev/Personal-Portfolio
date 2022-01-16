@@ -21,11 +21,10 @@ p,
 h3,
 a,
 span {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Open Sans";
 }
 
 body {
-  width: 100vw;
   height: 100vh;
 }
 
@@ -36,6 +35,9 @@ nav {
   right: 0;
   top: 0;
   border-bottom: var(--black) solid 0.2rem;
+}
+nav ul li a {
+  font-family: "Open Sans";
 }
 nav ul,
 ul {
@@ -52,17 +54,19 @@ ul li a:hover {
 .menu {
   display: flex;
   justify-content: center;
-  margin: 3rem;
+  margin: 3rem 1rem;
+  flex-wrap: wrap;
 }
 
 .menu li {
-  margin: 0 0.8rem;
+  margin: 1rem 0.8rem 0.2rem;
 }
 
 .menu li a {
   text-decoration: none;
   color: var(--black);
   text-transform: uppercase;
+  background-color: var(--background-green);
 }
 main {
   font-size: var(--text-sm);
@@ -71,7 +75,7 @@ main {
 
 .welcome {
   height: 100vh;
-  padding: 18rem 0 0;
+  padding: 14rem 0 0;
 }
 
 .welcome h1 {
@@ -82,8 +86,20 @@ main {
 .welcome h2 {
   font-size: var(--text-sm);
   line-height: 4rem;
+  margin-bottom: 1rem;
 }
-.about-me h2,
+
+.open-to-work {
+  z-index: -1;
+}
+.about-me h2 {
+  padding: 3rem 0;
+}
+
+.about-me ul li {
+  z-index: -1;
+}
+
 .portfolio h2,
 .contact h2 {
   font-size: var(--text-lg);
@@ -155,6 +171,12 @@ section p {
   text-decoration: none;
   color: var(--black);
 }
+
+.back-to-top {
+  position: relative;
+  right: -30%;
+  bottom: 2rem;
+}
 footer {
   font-size: var(--text-sm);
   text-align: center;
@@ -166,8 +188,8 @@ footer {
   .menu {
     justify-content: end;
   }
-  nav ul li a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  .menu li {
+    margin: 0 1rem;
   }
   .about-me h2,
   .portfolio h2 {
@@ -185,9 +207,17 @@ footer {
     line-height: 4.5rem;
     font-family: "Press Start 2P";
   }
+  .welcome h2 {
+    margin: 2rem 0;
+  }
 
   .about-me {
-    padding: 18rem;
+    padding: 20rem;
+  }
+
+  .about-me ul li p {
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
   }
   .boxes {
     display: grid;
@@ -211,6 +241,11 @@ footer {
   }
   .contact-me li a:hover {
     color: var(--brackground-green);
+  }
+
+  .back-to-top {
+    right: -80%;
+    bottom: -7.5rem;
   }
   footer span {
     font-size: var(--text-sm);

@@ -13,10 +13,6 @@
     <meta property="og:type" content="" />
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
-    <!-- <link
-      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
-      rel="stylesheet"
-    /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
@@ -25,16 +21,20 @@
   <body>
     <nav id="navbar">
       <ul class="menu">
-        <li><a href="">Yo</a></li>
-        <li><a href="#about-me">Sobre mí</a></li>
-        <li><a href="#projects">Portafolio</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li>
+          <a class="nes-btn" href="#about-me">Sobre mí</a>
+        </li>
+        <li><a class="nes-btn" href="#projects">Portafolio</a></li>
+        <li><a class="nes-btn" href="#contacto">Contacto</a></li>
       </ul>
     </nav>
     <main>
       <section id="welcome-section" class="welcome">
         <h1>Hola 🌐, <br />Mi nombre es <br />Yulianny Betancourt</h1>
         <h2>Soy Ingeniero de Sistemas y <br />Frontend Developer</h2>
+        <button type="button" class="nes-btn is-success open-to-work">
+          Open to work!
+        </button>
         <div class="box">
           <div class="box-child container-outside">
             <div class="box-child container-inside">
@@ -46,21 +46,30 @@
         </div>
       </section>
 
-      <section id="about-me" class="about-me">
+      <section id="about-me" class="about-me lists">
         <h2>Sobre mí</h2>
-        <p>
-          My life style is always learning, I like to read blogs about
-          technology that are around web.
-        </p>
-        <p>
-          In the 2021 I created a community where I leadership 12 teams about
-          read and discussion of the book Eloquent JavaScript. Many people have
-          benefit of that, and receive help for growing up better skills.
-        </p>
-        <p>
-          My principal focus is to give better soluciones to people through of
-          web apps easy to use.
-        </p>
+        <ul class="nes-list is-circle">
+          <li>
+            <p>
+              My life style is always learning, I like to read blogs about
+              technology that are around web.
+            </p>
+          </li>
+          <li>
+            <p>
+              In the 2021 I created a community where I leadership 12 teams
+              about read and discussion of the book Eloquent JavaScript. Many
+              people have benefit of that, and receive help for growing up
+              better skills.
+            </p>
+          </li>
+          <li>
+            <p>
+              My principal focus is to give better soluciones to people through
+              of web apps easy to use.
+            </p>
+          </li>
+        </ul>
       </section>
       <section id="projects" class="portfolio">
         <h2 id="mi-trabajo">Portafolio</h2>
@@ -69,13 +78,23 @@
             <div class="box">
               <div class="box-child container-outside">
                 <div class="box-child container-inside">
-                  <h3 class="project-tile">Proyecto 1</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis, ad fugiat, aliquid nulla, omnis reiciendis
-                    quibusdam nemo ex nobis tempora eos nam non explicabo.
-                    Maxime, adipisci aspernatur. Consequuntur, odit ipsa!
-                  </p>
+                  <h3 class="project-tile">Páginas de notas</h3>
+                  <p>Formulario hecho con Reactjs.</p>
+                  <a
+                    href="https://simple-blog-with-react.vercel.app/"
+                    target="_blank"
+                    >VER DEMO</a
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="box">
+              <div class="box-child container-outside">
+                <div class="box-child container-inside">
+                  <h3 class="project-tile">E-commerce</h3>
+                  <p>E-commerce hecho con gatsby.</p>
                   <a href="#">VER DEMO</a>
                 </div>
               </div>
@@ -85,14 +104,9 @@
             <div class="box">
               <div class="box-child container-outside">
                 <div class="box-child container-inside">
-                  <h3 class="project-tile">Proyecto 1</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis, ad fugiat, aliquid nulla, omnis reiciendis
-                    quibusdam nemo ex nobis tempora eos nam non explicabo.
-                    Maxime, adipisci aspernatur. Consequuntur, odit ipsa!
-                  </p>
-                  <a href="#">VER DEMO</a>
+                  <h3 class="project-tile">Landing page</h3>
+                  <p>Landing page hecha con HTML y CSS.</p>
+                  <a href="#" target="_blank"VER DEMO</a>
                 </div>
               </div>
             </div>
@@ -101,29 +115,8 @@
             <div class="box">
               <div class="box-child container-outside">
                 <div class="box-child container-inside">
-                  <h3 class="project-tile">Proyecto 2</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis, ad fugiat, aliquid nulla, omnis reiciendis
-                    quibusdam nemo ex nobis tempora eos nam non explicabo.
-                    Maxime, adipisci aspernatur. Consequuntur, odit ipsa!
-                  </p>
-                  <a href="#">VER DEMO</a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="box">
-              <div class="box-child container-outside">
-                <div class="box-child container-inside">
-                  <h3 class="project-tile">Proyecto 3</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Debitis, ad fugiat, aliquid nulla, omnis reiciendis
-                    quibusdam nemo ex nobis tempora eos nam non explicabo.
-                    Maxime, adipisci aspernatur. Consequuntur, odit ipsa!
-                  </p>
+                  <h3 class="project-tile">Portafolio</h3>
+                  <p>Portafolio hecho con HTML, CSS y nes.css.</p>
                   <a href="#">VER DEMO</a>
                 </div>
               </div>
@@ -154,6 +147,7 @@
         </ul>
       </section>
     </main>
+    <a class="nes-btn back-to-top" href="#"><b>Regresar arriba</b></a>
     <footer>
       <span>Hecho con 💜, HTML/CSS.</span>
       <br />
