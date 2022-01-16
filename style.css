@@ -2,7 +2,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
 :root {
   --text-sm: 1.8rem;
   --text-md: 2rem;
@@ -16,7 +16,7 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
-
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 p,
 h3,
 a,
