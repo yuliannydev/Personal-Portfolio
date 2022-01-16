@@ -1,5 +1,4 @@
 import "./style.css";
-import "nes.css/css/nes.min.css";
 
 // document.querySelector('#app').innerHTML = `
 //   <h1>Hello Vite!</h1>
