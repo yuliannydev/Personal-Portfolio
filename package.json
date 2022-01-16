@@ -12,5 +12,25 @@
   },
   "dependencies": {
     "nes.css": "^2.3.0"
+  },
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuliannydev/freeCodeCamp-Personal-Portfolio.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "nes-css",
+    "vite"
+  ],
+  "author": "Yulianny Betancourt <flipsdulce@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuliannydev/freeCodeCamp-Personal-Portfolio/issues"
+  },
+  "homepage": "https://github.com/yuliannydev/freeCodeCamp-Personal-Portfolio#readme",
+  "engines": {
+    "node": ">=10.x"
   }
 }
