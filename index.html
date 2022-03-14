@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,10 +8,10 @@
     <meta property="og:title" content="Yulianny Betancourt" />
     <meta
       property="og:description"
-      content="Mi nombre es Yulianny Betancourt, y soy Ingeniero de Sistemas y Frontend Developer"
+      content="Mi nombre es Yulianny Betancourt, soy Ingeniero de Sistemas y Frontend Developer"
     />
     <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
+    <meta property="og:url" content="https://www.yuliannydev.tech/" />
     <meta property="og:image" content="" />
     <link
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
@@ -35,18 +35,22 @@
     />
   </head>
   <body>
-    <nav id="navbar">
-      <ul class="menu">
+    <nav id="navbar" class="navbar">
+      <ul class="menu .active-hamburger">
+        <li><a class="nes-btn link" href="#about-me">Sobre mí</a></li>
+        <li><a class="nes-btn link" href="#projects">Portafolio</a></li>
         <li>
-          <a class="nes-btn" href="#about-me">Sobre mí</a>
+          <a class="nes-btn link" href="#contact-id">Contacto</a>
         </li>
-        <li><a class="nes-btn" href="#projects">Portafolio</a></li>
-        <li><a class="nes-btn" href="#contacto">Contacto</a></li>
       </ul>
+      <button class="nes-btn hamburguer" type="button">Menú</button>
     </nav>
     <main>
       <section id="welcome-section" class="welcome">
-        <h1>Hola 🌐, <br />Mi nombre es <br />Yulianny Betancourt</h1>
+        <h1>
+          Hola 🌐, <br />Mi nombre es <br />
+          Yulianny Betancourt
+        </h1>
         <h2>Soy Ingeniero de Sistemas y <br />Frontend Developer</h2>
         <button type="button" class="nes-btn is-success open-to-work">
           Open to work!
@@ -147,7 +151,7 @@
           </li>
         </ul>
       </section>
-      <section id="contacto" class="contact icon-list">
+      <section id="contact-id" class="contact icon-list">
         <h2>Trabajemos juntos...</h2>
         <p>Puedes conseguirme por uno de estos medios.</p>
         <ul class="contact-me">
@@ -172,9 +176,9 @@
     </main>
     <a class="nes-btn back-to-top" href="#"><b>Regresar arriba</b></a>
     <footer>
-      <span>Hecho con 💜, HTML/CSS.</span>
+      <m>Hecho con 💜, HTML/CSS y JavaScript</m>
       <br />
-      <span>por Yulianny Betancourt</span>
+      <m>por Yulianny Betancourt</m>
     </footer>
   </body>
   <script type="module" src="/main.js"></script>

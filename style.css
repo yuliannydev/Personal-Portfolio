@@ -4,6 +4,7 @@
 }
 
 :root {
+  --text-sss: 1rem;
   --text-sm: 1.8rem;
   --text-md: 2rem;
   --text-lg: 2.4rem;
@@ -14,7 +15,6 @@
 }
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
 }
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 p,
@@ -35,6 +35,8 @@ nav {
   right: 0;
   top: 0;
   border-bottom: var(--black) solid 0.2rem;
+  display: flex;
+  justify-content: center;
 }
 nav ul li a {
   font-family: "Open Sans";
@@ -53,9 +55,29 @@ ul li a:hover {
 }
 .menu {
   display: flex;
-  justify-content: center;
-  margin: 3rem 1rem;
+  justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh;
+  margin: 3rem 0 0;
+  padding: 0;
+  display: none;
+  opacity: 0;
+}
+
+@keyframes showMenu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.menu.active-hamburger {
+  display: flex;
+  animation: showMenu 350ms ease-in-out both;
 }
 
 .menu li {
@@ -68,14 +90,28 @@ ul li a:hover {
   text-transform: uppercase;
   background-color: var(--background-green);
 }
+
+.link {
+  margin: 0.4rem;
+  padding: 0.4rem;
+}
+
+.hamburguer {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  display: block;
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  background-color: var(--background-green);
+}
 main {
   font-size: var(--text-sm);
   margin: 12rem 2.5rem 0;
 }
 
 .welcome {
-  height: 100vh;
-  padding: 14rem 0 0;
+  padding: 8rem 1rem 0;
 }
 
 .welcome h1 {
@@ -98,8 +134,12 @@ main {
 
 .about-me ul li {
   z-index: -1;
+  margin-left: 1.5rem;
 }
 
+.about-me ul li p {
+  margin-left: 0.5rem;
+}
 .portfolio h2,
 .contact h2 {
   font-size: var(--text-lg);
@@ -178,18 +218,42 @@ section p {
   bottom: 2rem;
 }
 footer {
-  font-size: var(--text-sm);
+  font-size: var(--text-sss);
   text-align: center;
   padding: 2rem 0;
   line-height: 2.5rem;
+  color: grey;
+}
+
+footer span {
+  color: var(--background-green);
 }
 
 @media (min-width: 920px) {
+  nav {
+    flex-direction: column;
+  }
   .menu {
-    justify-content: end;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding: 0;
+    height: 6vh;
+    margin: 2.5rem;
+    opacity: 1;
   }
   .menu li {
     margin: 0 1rem;
+  }
+
+  .link {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  /* menú mobile */
+  .hamburguer {
+    display: none;
   }
   .about-me h2,
   .portfolio h2 {
@@ -198,6 +262,7 @@ footer {
   }
 
   .welcome {
+    height: 100vh;
     padding: 22rem;
   }
   .welcome h1,

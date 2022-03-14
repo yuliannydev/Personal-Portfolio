@@ -1,6 +1,10 @@
 import "./style.css";
 
-// document.querySelector('#app').innerHTML = `
-//   <h1>Hello Vite!</h1>
-//   <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-// `
+/* Menú mobile */
+const toggleButton = document.querySelector(".hamburguer");
+
+const menuHamburguer = document.querySelector(".menu");
+
+toggleButton.addEventListener("click", () => {
+  menuHamburguer.classList.toggle("active-hamburger");
+});
