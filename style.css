@@ -19,7 +19,6 @@ html {
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 p,
 h3,
-a,
 span {
   font-family: "Open Sans";
 }
@@ -216,6 +215,7 @@ section p {
   position: relative;
   right: -30%;
   bottom: 2rem;
+  font-family: "Open Sans";
 }
 footer {
   font-size: var(--text-sss);
